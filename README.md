@@ -1,16 +1,6 @@
 <h1 align="center">Hi 👋, I'm Satayesh</h1>
 <h3 align="center">A passionate frontend developer from Afghanistan</h3>
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=satayesh-esmaily&label=Profile%20views&color=0e75b6&style=flat" alt="satayesh-esmaily" />
-</p>
-
-<p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=satayesh-esmaily&theme=flat&no-frame=true" />
-  </a>
-</p>
-
 ---
 
 ### 🧠 About Me
