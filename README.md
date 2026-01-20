@@ -38,7 +38,7 @@
 
 ### 🧰 Languages and Tools
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,python,git,github,bootstrap,figma,framer,photoshop,illustrator,vscode,npm,scratch&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,python,git,github,bootstrap,figma,photoshop,illustrator,vscode,npm,scratch&theme=light)](https://skillicons.dev)
 
 
 ---
