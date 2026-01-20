@@ -1,5 +1,6 @@
-<h1 align="center">Hi 👋, I'm Satayesh</h1>
-<h3 align="center">A passionate frontend developer from Afghanistan</h3>
+<h1 align="center">Hi 👋, I'm Satayesh Esmaily </h1>
+<h3 align="center">A creative Frontend Developer blending design and code to build engaging web interfaces</h3>
+
 
 ---
 
@@ -37,24 +38,8 @@
 
 ### 🧰 Languages and Tools
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" height="40"/>
- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40" height="40"/>
- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg" width="40" height="40"/>
- <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Scratch_Logo.svg" alt="scratch" width="40" height="40"/>
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,python,git,github,bootstrap,figma,framer,photoshop,illustrator,vscode,npm,scratch&theme=light)](https://skillicons.dev)
 
-</p>
 
 ---
 
