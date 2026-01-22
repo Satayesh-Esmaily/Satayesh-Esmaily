@@ -7,7 +7,7 @@
 ### 🧠 About Me
 
 - 🔭 I’m currently working on improving my web development skills by **building real projects with HTML, CSS, JavaScript, and React**  
-- 🌱 I’m currently learning **Network+ fundamentals** and deepening my knowledge of **frontend development and Python**  
+- 🌱 I’m currently learning **React, Pygame** and deepening my knowledge of **frontend development and Python**  
 - 🤝 I’m looking to collaborate on **beginner-friendly open-source projects, educational platforms, or creative web apps**  
 - 🤔 I’m looking for help with **gaining real-world experience, best practices in web development, and preparing for remote internships**  
 - 💬 Ask me about **web design, PowerPoint storytelling, Python basics, or learning tech as a student**
