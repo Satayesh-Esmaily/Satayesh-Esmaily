@@ -1,52 +1,97 @@
-<h1 align="center">Hi 👋, I'm Satayesh Esmaily </h1>
-<h3 align="center">A creative Frontend Developer blending design and code to build engaging web interfaces</h3>
+<h1 align="center">Hi, I'm Satayesh Esmaily</h1>
 
-
----
-
-### 🧠 About Me
-
-- 🔭 I’m currently working on improving my web development skills by **building real projects with HTML, CSS, JavaScript, and React**  
-- 🌱 I’m currently learning **React, Pygame** and deepening my knowledge of **frontend development and Python**  
-- 🤝 I’m looking to collaborate on **beginner-friendly open-source projects, educational platforms, or creative web apps**  
-- 🤔 I’m looking for help with **gaining real-world experience, best practices in web development, and preparing for remote internships**  
-- 💬 Ask me about **web design, PowerPoint storytelling, Python basics, or learning tech as a student**
-- 💡 I enjoy building interactive experiences using Python, Pygame, and Scratch, especially for learning-focused and creative projects.
-- 👨‍💻 All of my projects are available at:  
-  👉 https://github.com/Satayesh-Esmaily  
-- 📫 How to reach me: **setayeshesmaily59@gmail.com**  
-- 😄 Pronouns: **She/Her**  
-- ⚡ Fun fact: **I love combining design and code to turn ideas into interactive experiences ✨**
+<h3 align="center">
+Frontend Developer focused on building modern, responsive, and user-friendly web applications
+</h3>
 
 ---
 
-### 🤝 Connect with Me
+## About Me
 
-<p align="left">
-<a href="https://twitter.com/satayeshe59770" target="blank">
-  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" height="30" width="40" />
-</a>
-<a href="https://linkedin.com/in/satayesh-esmaily" target="blank">
-  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
-</a>
-<a href="https://instagram.com/satayesh.esmaily" target="blank">
-  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" height="30" width="40" />
-</a>
-</p>
+- Frontend Developer with experience in building web applications using Angular, React, Next.js, TypeScript, JavaScript, HTML, and CSS.
+- Currently expanding my knowledge in frontend architecture, testing, and modern web development practices.
+- Experienced with unit testing using Jasmine, Karma, and Jest.
+- Passionate about creating accessible and engaging user experiences through the combination of design and development.
+- Open to collaborating on open-source projects, educational platforms, and innovative web applications.
+- Strong interest in continuous learning and professional growth within the software development industry.
 
 ---
 
-### 🧰 Languages and Tools
+## Current Focus
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,python,git,github,bootstrap,tailwind,unity,materialui,figma,photoshop,illustrator,vscode,npm,scratch&theme=light)](https://skillicons.dev)
-
+- Building scalable frontend applications with Angular, React, and Next.js.
+- Writing maintainable and well-tested code using Jasmine, Karma, and Jest.
+- Improving application performance, accessibility, and user experience.
+- Learning software architecture and modern frontend development patterns.
 
 ---
 
-### 📊 GitHub Stats
-
+## Technologies
 
 <p>
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=satayesh-esmaily" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,angular,react,nextjs,python,jest,git,github,bootstrap,tailwind,materialui,figma,photoshop,vscode,npm&theme=light" />
 </p>
 
+---
+
+## Testing & Quality
+
+- Unit Testing with Jasmine
+- Test Automation with Karma
+- Frontend Testing with Jest
+- Component-Based Development
+- Clean Code Principles
+- Responsive Web Design
+
+---
+
+## Connect With Me
+
+<p align="left">
+  <a href="https://linkedin.com/in/satayesh-esmaily" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
+  </a>
+  <a href="https://twitter.com/satayeshe59770" target="_blank">
+    <img src="https://skillicons.dev/icons?i=twitter" alt="Twitter" />
+  </a>
+  <a href="https://instagram.com/satayesh.esmaily" target="_blank">
+    <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
+  </a>
+</p>
+
+---
+
+## Featured Interests
+
+- Frontend Development
+- UI/UX Design
+- Web Accessibility
+- Performance Optimization
+- Design Systems
+- Open Source
+- Software Architecture
+- Educational Technology
+
+---
+
+## Projects
+
+You can find my projects and learning journey here:
+
+<a href="https://github.com/Satayesh-Esmaily">GitHub Portfolio</a>
+
+---
+
+## GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Satayesh-Esmaily" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Satayesh-Esmaily&show_icons=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Satayesh-Esmaily&layout=compact" alt="Top Languages" />
+</p>
