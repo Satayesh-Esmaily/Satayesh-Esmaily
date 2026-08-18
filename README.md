@@ -1,15 +1,18 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:1E3C72,100:2A5298&height=200&section=header&text=Satayesh%20Esmaily&fontColor=ffffff&fontSize=44&fontAlign=50&fontAlignY=38&animation=fadeIn&desc=Frontend%20Developer%20%E2%80%A2%20Angular%20%C2%B7%20React%20%C2%B7%20Next.js&descAlign=50&descAlignY=58&descSize=17" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:1E3C72,100:2A5298&height=200&section=header&text=Satayesh%20Esmaily&fontColor=ffffff&fontSize=44&fontAlign=50&fontAlignY=38&animation=fadeIn&desc=Frontend%20Developer%20%E2%80%A2%20Python%20Enthusiast&descAlign=50&descAlignY=58&descSize=17" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=Building+clean%2C+responsive+web+apps;Angular+%7C+React+%7C+Next.js+%7C+TypeScript;Tested+with+Jasmine%2C+Karma+%26+Jest" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=Building+clean%2C+responsive+web+apps;Angular+%7C+React+%7C+Next.js+%7C+Python;Tested+with+Jasmine%2C+Karma+%26+Jest" alt="Typing SVG" />
 
 <br/>
 
+[![Email](https://img.shields.io/badge/Email-0F2027?style=for-the-badge&logo=gmail&logoColor=white)](mailto:setayeshesmaily59@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/satayesh-esmaily)
 [![Twitter](https://img.shields.io/badge/Twitter-1E3C72?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/satayeshe59770)
 [![Instagram](https://img.shields.io/badge/Instagram-2A5298?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/satayesh.esmaily)
 [![GitHub](https://img.shields.io/badge/GitHub-003973?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Satayesh-Esmaily)
+
+📍 Herat, Afghanistan
 
 </div>
 
@@ -21,11 +24,12 @@
 <tr>
 <td width="55%" valign="top">
 
+Motivated Computer Science student with a strong interest in web development. I build with **Python** and **frontend technologies**, and I've picked up hands-on experience through academic, volunteer, and professional projects — from QA testing to designing presentations to building full web apps.
+
 - 🖥️ Frontend Developer building **scalable, responsive web apps**
-- ⚙️ Working daily with **Angular, React, and Next.js**
+- 🐍 Also a **Python enthusiast** — from robotics to game development
 - 🧪 Writing tested, maintainable code with **Jasmine, Karma & Jest**
 - 🎯 Focused on **performance, accessibility, and clean UX**
-- 📐 Deepening my knowledge of **frontend architecture & design patterns**
 - 🤝 Open to **open-source, EdTech, and collaborative projects**
 
 </td>
@@ -33,9 +37,9 @@
 
 > ```yaml
 > role: Frontend Developer
-> stack: [Angular, React, Next.js, TypeScript]
+> stack: [Angular, React, Next.js, Python]
 > testing: [Jasmine, Karma, Jest]
-> focus: [Architecture, Accessibility, UX]
+> based_in: Herat, Afghanistan
 > status: "open to collaboration"
 > ```
 
@@ -57,6 +61,35 @@
 
 <br/>
 
+
+## 🎓 Education
+<table width="100%">
+<tr><th align="left">Institution</th><th align="left">Focus</th><th align="left">Location</th><th align="left">Years</th></tr>
+<tr><td>Hewad High School</td><td>Grades 9 – 12</td><td>Herat, Afghanistan</td><td>2023 – 2026</td></tr>
+<tr><td>Code to Inspire</td><td>Web Design , React.js , Next.js </td><td>Herat, Afghanistan</td><td>2025 – 2026</td></tr>
+<tr><td>Pioneering mWoen Online School</td><td>Robotics & Python Programming</td><td>Remote</td><td>2024 – 2026</td></tr>
+<tr><td>Ghalib School</dt><td>Grade 8</td><td>Herat, Afghanistan</td><td>2021 – 2022</td></tr>
+<tr><td>Towhid High School</td><td>Grades 1 – 7</td><td>Herat, Afghanistan</td><td>2015 – 2021</td></tr>
+</table>
+
+<br/>
+
+## 💼 Experience
+
+<table width="100%">
+<tr>
+<td width="100%">
+
+**QA Tester** · Code to Inspire *(Remote, 7 months)*
+Manual testing, bug reporting, and test case execution — focused on improving software quality, user experience, and unit test coverage.
+
+</td>
+</tr>
+<tr><td><br/></td></tr>
+</table>
+
+<br/>
+
 ## 💠 Tech Stack
 
 <div align="center">
@@ -65,34 +98,40 @@
 
 <table align="center">
 <tr>
-<td align="center" valign="top" width="20%">
+<td align="center" valign="top" width="16%">
 
 <img src="https://skillicons.dev/icons?i=html,css" /><br/>
 <sub><b>Markup & Style</b></sub>
 
 </td>
-<td align="center" valign="top" width="20%">
+<td align="center" valign="top" width="16%">
 
-<img src="https://skillicons.dev/icons?i=js,ts" /><br/>
-<sub><b>Language</b></sub>
+<img src="https://skillicons.dev/icons?i=js,ts,py" /><br/>
+<sub><b>Languages</b></sub>
 
 </td>
-<td align="center" valign="top" width="20%">
+<td align="center" valign="top" width="16%">
 
 <img src="https://skillicons.dev/icons?i=angular,react,nextjs" /><br/>
 <sub><b>Frameworks</b></sub>
 
 </td>
-<td align="center" valign="top" width="20%">
+<td align="center" valign="top" width="16%">
 
 <img src="https://skillicons.dev/icons?i=tailwind,bootstrap,materialui" /><br/>
 <sub><b>UI & Styling</b></sub>
 
 </td>
-<td align="center" valign="top" width="20%">
+<td align="center" valign="top" width="16%">
 
 <img src="https://skillicons.dev/icons?i=jest,git,figma" /><br/>
 <sub><b>Testing & Tools</b></sub>
+
+</td>
+<td align="center" valign="top" width="16%">
+
+<img src="https://skillicons.dev/icons?i=pygame,photoshop" /><br/>
+<sub><b>Robotics & Design</b></sub>
 
 </td>
 </tr>
@@ -107,7 +146,7 @@
 <tr><td>Angular</td><td>🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜</td></tr>
 <tr><td>React</td><td>🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜</td></tr>
 <tr><td>Next.js</td><td>🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜</td></tr>
-<tr><td>TypeScript</td><td>🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜</td></tr>
+<tr><td>Python</td><td>🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜</td></tr>
 <tr><td>Testing (Jest / Jasmine / Karma)</td><td>🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜</td></tr>
 </table>
 
@@ -120,7 +159,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-1E3C72?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-274B8C?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-2A5298?style=for-the-badge&logo=javascript&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-14589E?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-0F2027?style=for-the-badge&logo=python&logoColor=white)
 <br/>
 ![Angular](https://img.shields.io/badge/Angular-0F2027?style=for-the-badge&logo=angular&logoColor=white)
 ![React](https://img.shields.io/badge/React-1E3C72?style=for-the-badge&logo=react&logoColor=white)
@@ -139,7 +178,37 @@
 ![GitHub](https://img.shields.io/badge/GitHub-0F2027?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-1E3C72?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-14589E?style=for-the-badge&logo=figma&logoColor=white)
-![npm](https://img.shields.io/badge/npm-2A5298?style=for-the-badge&logo=npm&logoColor=white)
+<br/>
+![Word](https://img.shields.io/badge/Word-1E3C72?style=for-the-badge&logo=microsoftword&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-0F2027?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![PowerPoint](https://img.shields.io/badge/PowerPoint-2A5298?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)
+![Photoshop](https://img.shields.io/badge/Photoshop-003973?style=for-the-badge&logo=adobephotoshop&logoColor=white)
+![InDesign](https://img.shields.io/badge/InDesign-14589E?style=for-the-badge&logo=adobeindesign&logoColor=white)
+
+</div>
+
+<br/>
+
+## 🤖 Robotics & Game Dev
+
+<div align="center">
+
+| Area | Details |
+|:---|:---|
+| Robot Programming | Python-based robot control |
+| 2D Game Development | Python & Pygame |
+| Control Systems | Sensor-based logic & control systems |
+
+</div>
+
+<br/>
+
+## 🗣️ Professional & Communication Skills
+
+<div align="center">
+
+`Clean & Readable Code` `Debugging & Syntax Fixing` `Public Speaking` `Presentation`
+`Teamwork` `Communication` `Report Writing`
 
 </div>
 
@@ -218,6 +287,64 @@ See more on my **[GitHub Portfolio →](https://github.com/Satayesh-Esmaily)**
 
 <br/>
 
+## 🏅 Certifications
+
+<div align="center">
+
+| Certification | Issuer | Year |
+|:---|:---|:---:|
+| Web Design Fundamentals (Grade A+) | Code to Inspire | 2025 |
+| Representing Team Afghanistan — First Global Competition | Code to Inspire | 2025 |
+| Shadowing Program & Seda App Hackathon | Code to Inspire | 2025 |
+| Cyber Security Course | Cisco Networking Academy | 2024 |
+| Python Course | Cisco Networking Academy | 2025 |
+| PowerPoint Presentation Design & Formatting | Coursera | 2025 |
+| Speech Course Certificate | AIL | 2023 |
+| Children and the Digital Future Workshop | Femstech Worldwide | 2024 |
+| Adobe InDesign Flyer Design Workshop | Coursera | 2025 |
+| First Aid & Injections Certificates | AIL | 2024 |
+| English Course | Kings College London | 2023 – 2024 |
+
+</div>
+
+<br/>
+
+## 🏆 Awards
+
+<div align="center">
+
+| Award | Score / Result | Year |
+|:---|:---:|:---:|
+| Duolingo English Test | 120 | 2025 |
+
+</div>
+
+<br/>
+
+## 🌐 Languages
+
+<div align="center">
+
+| Language | Level |
+|:---|:---|
+| Farsi | Fluent 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| English | Very Good 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ |
+
+</div>
+
+<br/>
+
+## 🙋 Volunteer Experience
+
+<div align="center">
+
+**Vice President, Capacity Building Department**
+Generation of Thinkers (GOT) · Remote · 2024 – 2025
+
+</div>
+
+<br/>
+
 ## 🏆 GitHub Trophies
 
 <div align="center">
@@ -248,8 +375,8 @@ See more on my **[GitHub Portfolio →](https://github.com/Satayesh-Esmaily)**
 
 <div align="center">
 
-`Frontend Development` `UI/UX Design` `Web Accessibility` `Performance Optimization`
-`Design Systems` `Open Source` `Software Architecture` `Educational Technology`
+`Frontend Development` `Python` `UI/UX Design` `Web Accessibility` `Performance Optimization`
+`Design Systems` `Open Source` `Robotics` `Educational Technology`
 
 </div>
 
@@ -267,7 +394,7 @@ See more on my **[GitHub Portfolio →](https://github.com/Satayesh-Esmaily)**
 
 ### 💬 Let's Build Something
 
-I'm always up for a good conversation about frontend, design systems, or a new project idea — reach out anytime.
+I'm always up for a good conversation about frontend, Python, or a new project idea — reach out anytime.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A5298,50:1E3C72,100:0F2027&height=150&section=footer" width="100%"/>
 
