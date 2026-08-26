@@ -345,32 +345,6 @@ Generation of Thinkers (GOT) · Remote · 2024 – 2025
 
 <br/>
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=Satayesh-Esmaily&theme=algolia&no-frame=true&row=1&column=6" />
-</div>
-
-<br/>
-
-## 📊 GitHub Stats
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Satayesh-Esmaily&show_icons=true&hide_border=true&title_color=4A90E2&icon_color=4A90E2&text_color=ffffff&bg_color=0F2027" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Satayesh-Esmaily&layout=compact&hide_border=true&title_color=4A90E2&text_color=ffffff&bg_color=0F2027" width="35%" />
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Satayesh-Esmaily&hide_border=true&background=0F2027&ring=4A90E2&fire=4A90E2&currStreakLabel=4A90E2" width="60%" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Satayesh-Esmaily&bg_color=0F2027&color=4A90E2&line=4A90E2&point=ffffff&hide_border=true" width="90%" />
-
-</div>
-
-<br/>
-
 ## 🎯 Interests
 
 <div align="center">
