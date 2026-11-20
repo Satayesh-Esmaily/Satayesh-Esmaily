@@ -59,14 +59,7 @@ I'm a Computer Science student who builds for the web with **React, Next.js, Ang
 <br/>
 
 <div align="center">
-
-<img height="180" alt="GitHub stats with total commits" src="https://github-readme-stats.vercel.app/api?username=Satayesh-Esmaily&show_icons=true&include_all_commits=true&hide_border=false&bg_color=05060F&title_color=00E5FF&icon_color=FF3DCB&text_color=E6E9FF&border_color=1A1F3D&border_radius=16" />
-<img height="180" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Satayesh-Esmaily&layout=compact&langs_count=8&hide_border=false&bg_color=05060F&title_color=00E5FF&icon_color=FF3DCB&text_color=E6E9FF&border_color=1A1F3D&border_radius=16" />
-
-<br/>
-
-<img width="70%" alt="Contribution streak" src="https://streak-stats.demolab.com?user=Satayesh-Esmaily&background=05060F&border=1A1F3D&ring=00E5FF&fire=FF3DCB&currStreakNum=E6E9FF&currStreakLabel=00E5FF&sideNums=E6E9FF&sideLabels=FF3DCB&dates=8A93C2&stroke=1A1F3D&border_radius=16" />
-
+<img width="100%" alt="Contributions, current streak and top languages" src="assets/generated/stats.svg" />
 </div>
 
 <br/>
