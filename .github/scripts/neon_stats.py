@@ -108,10 +108,64 @@ def trophies_svg(d):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="840" height="150" viewBox="0 0 840 150" fill="none"><defs>{GLOW}</defs>
 <rect x="0.5" y="0.5" width="839" height="149" rx="18" fill="{BG2}" stroke="{LINE}"/>{body}</svg>'''
 
+
+def _shade(hexc, f):
+    r, g, b = (int(hexc[i:i+2], 16) for i in (1, 3, 5))
+    return "#%02X%02X%02X" % (int(r*f), int(g*f), int(b*f))
+
+def skyline_svg(d):
+    """Isometric neon 'city' where every day of the last year is a building."""
+    W, H = 840, 400
+    ux, uy, vx, vy = 14, 4, -9, 4.5       # week step, day step
+    ox, oy, mg_ = 70, 130, 0.1
+    tops = ["#141A33", "#0A5F7A", "#00A6C8", "#00E5FF", "#FF3DCB"]
+    weeks = d["weeks"]
+    cells = [(w, k, c) for w, wk in enumerate(weeks) for k, (_, c) in enumerate(wk)]
+    mx = max([c for _, _, c in cells] + [1])
+    cells.sort(key=lambda t: (t[0] + t[1], t[0]))
+    def lvl(c):
+        if c == 0: return 0
+        r = c / mx
+        return 1 if r <= .25 else 2 if r <= .5 else 3 if r <= .75 else 4
+    def P(w, k, a, b, h):                 # corner at fractions a (week axis), b (day axis)
+        return (ox + (w + a) * ux + (k + b) * vx, oy + (w + a) * uy + (k + b) * vy - h)
+    def poly(pts, fill, op=1):
+        return '<polygon points="%s" fill="%s"%s/>' % (" ".join("%.1f,%.1f" % q for q in pts), fill, "" if op == 1 else f' fill-opacity="{op}"')
+    body, hot = "", ""
+    for w, k, c in cells:
+        L = lvl(c); h = 1.6 if c == 0 else 6 + 104 * (c / mx) ** 0.7
+        c0, c1, c2, c3 = P(w, k, mg_, mg_, h), P(w, k, 1-mg_, mg_, h), P(w, k, 1-mg_, 1-mg_, h), P(w, k, mg_, 1-mg_, h)
+        top = tops[L]; g = ""
+        if c > 0:
+            b2, b3, b1 = P(w, k, 1-mg_, 1-mg_, 0), P(w, k, mg_, 1-mg_, 0), P(w, k, 1-mg_, mg_, 0)
+            g += poly([c3, c2, b2, b3], _shade(top, .62)) + poly([c1, c2, b2, b1], _shade(top, .4))
+        g += poly([c0, c1, c2, c3], top, 0.55 if c == 0 else 1)
+        if L == 4: hot += g
+        else: body += g
+    days = [c for _, _, c in cells]
+    best, active = (max(days) if days else 0), sum(1 for c in days if c > 0)
+    leg = "".join(f'<rect x="{262+i*16}" y="376" width="11" height="11" rx="3" fill="{t}"/>' for i, t in enumerate(tops))
+    note = "last 12 months" if d["live"] else "updates after the first workflow run"
+    stat = lambda x, lab, val, c: (f'<text x="{x}" y="318" font-family="{MONO}" font-size="10" letter-spacing="1.5" fill="{MUT}">{lab}</text>'
+                                   f'<text x="{x}" y="344" font-family="{SANS}" font-size="24" font-weight="800" fill="{c}" filter="url(#glow)">{val}</text>')
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">
+<defs>{GLOW}<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+<linearGradient id="n" x1="28" x2="250" gradientUnits="userSpaceOnUse"><stop stop-color="{CY}"/><stop offset="1" stop-color="{MG}"/></linearGradient>
+<clipPath id="c"><rect width="{W}" height="{H}" rx="18"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{BG2}"/>
+<g filter="url(#blur)"><circle cx="720" cy="40" r="110" fill="{MG}" fill-opacity="0.22"/><circle cx="120" cy="380" r="120" fill="{CY}" fill-opacity="0.20"/></g>
+{body}<g filter="url(#glow)">{hot}</g>
+<text x="28" y="292" font-family="{MONO}" font-size="11" letter-spacing="2.5" fill="{MG}">CONTRIBUTION SKYLINE</text>
+<text x="28" y="344" font-family="{SANS}" font-size="44" font-weight="800" fill="url(#n)" filter="url(#glow)">{d["total"]}</text>
+<text x="28" y="368" font-family="{MONO}" font-size="11.5" fill="{MUT}">contributions · {note}</text>
+{stat(262, "BEST DAY", best, CY)}{stat(372, "ACTIVE DAYS", active, GR)}{leg}</g>
+<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="17.5" stroke="{LINE}"/></svg>"""
+
 def write(d):
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "activity.svg"), "w", encoding="utf-8").write(activity_svg(d))
     open(os.path.join(OUT, "trophies.svg"), "w", encoding="utf-8").write(trophies_svg(d))
+    open(os.path.join(OUT, "skyline.svg"), "w", encoding="utf-8").write(skyline_svg(d))
 
 if __name__ == "__main__":
     if "--offline" in sys.argv:
