@@ -76,7 +76,7 @@ I'm a Computer Science student who builds for the web with **React, Next.js, Ang
 <br/>
 
 <div align="center">
-<img width="100%" alt="Contribution and commit activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Satayesh-Esmaily&bg_color=05060F&color=E6E9FF&line=00E5FF&point=FF3DCB&area=true&area_color=00E5FF&hide_border=true&custom_title=Commits%20%26%20Contributions" />
+<img width="100%" alt="Commit and contribution activity" src="assets/generated/activity.svg" />
 </div>
 
 <br/>
@@ -86,7 +86,7 @@ I'm a Computer Science student who builds for the web with **React, Next.js, Ang
 <br/>
 
 <div align="center">
-<img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=Satayesh-Esmaily&theme=radical&margin-w=8&row=1&column=7" />
+<img width="100%" alt="GitHub trophies" src="assets/generated/trophies.svg" />
 </div>
 
 <br/>
