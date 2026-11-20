@@ -98,7 +98,7 @@ I'm a Computer Science student who builds for the web with **React, Next.js, Ang
 
 <br/>
 
-- **Game development** with Unity, Blender and Python (Pygame for 2D games)
+- **Game development** with Unity, C#, Blender and Python (Pygame for 2D games)
 - **Robot programming** with Python-based control
 - **Control systems** using sensor-based logic
 
