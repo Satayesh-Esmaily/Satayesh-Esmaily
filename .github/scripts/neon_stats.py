@@ -262,5 +262,10 @@ if __name__ == "__main__":
         write(empty())
     else:
         login = os.environ.get("GH_LOGIN") or os.environ["GITHUB_REPOSITORY_OWNER"]
-        write(fetch(login, os.environ["GITHUB_TOKEN"]))
+        data = fetch(login, os.environ["GITHUB_TOKEN"])
+        print(f"{login}: {data['total']} contributions, {data['commits']} commits, {data['prs']} PRs, "
+              f"{data['repos']} repos, {len(data['langs'])} languages, {len(data['weeks'])} weeks")
+        if not data["weeks"]:
+            raise SystemExit("No contribution data returned; not overwriting the existing images.")
+        write(data)
     print("done")
