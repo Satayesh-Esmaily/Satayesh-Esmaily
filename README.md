@@ -14,91 +14,126 @@
 
 <br/>
 
-## About
+<img src="assets/sec-about.svg" alt="About" width="100%"/>
+
+<br/>
 
 I'm a Computer Science student who builds for the web with **React, Next.js, Angular** and **Python**. My experience spans academic, volunteer and professional work, from QA testing to full web apps, and I care about performance, accessibility and clean UX.
 
-- **Building** scalable, responsive frontends with tested, maintainable code
-- **Exploring** frontend architecture, design systems, robotics and game development
-- **Open to** open-source, EdTech and collaborative projects
+<div align="center">
+<img src="assets/now.svg" alt="Building, learning, exploring, open to" width="100%"/>
+</div>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-## Tech Stack
+<img src="assets/sec-stack.svg" alt="Tech Stack" width="100%"/>
+
+<br/>
 
 <div align="center">
 <img src="assets/skills.svg" width="100%" alt="Tech stack: languages, frameworks, UI, testing, tools, game dev and 3D, design"/>
 </div>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-## Featured Projects
+<img src="assets/sec-projects.svg" alt="Featured Projects" width="100%"/>
+
+<br/>
 
 <div align="center">
 
 <a href="https://afghan-kaaryab.vercel.app/"><img src="assets/project-1.svg" width="32%" alt="KaarYab Afghanistan"/></a>
 <a href="https://goal-tracker-project.vercel.app/"><img src="assets/project-2.svg" width="32%" alt="Goal Tracker"/></a>
-<a href="https://github.com/Satayesh-Esmaily/Product-Store-App"><img src="assets/project-3.svg" width="32%" alt="Product Store App"/></a>
+<a href="https://github.com/HisabBook/hisab-book"><img src="assets/project-3.svg" width="32%" alt="HisabBook"/></a>
+<a href="https://github.com/Satayesh-Esmaily/Taply"><img src="assets/project-4.svg" width="32%" alt="Taply"/></a>
+<a href="https://github.com/Satayesh-Esmaily/Product-Store-App"><img src="assets/project-5.svg" width="32%" alt="Product Store App"/></a>
 
-<sub>Source code: <a href="https://github.com/Satayesh-Esmaily/afghan-kaaryab">KaarYab</a> &nbsp;·&nbsp; <a href="https://github.com/Satayesh-Esmaily/Goal-Tracker-">Goal Tracker</a> &nbsp;·&nbsp; <a href="https://github.com/Satayesh-Esmaily/Product-Store-App">Product Store</a></sub>
+<sub>Source code: <a href="https://github.com/Satayesh-Esmaily/afghan-kaaryab">KaarYab</a> &nbsp;·&nbsp; <a href="https://github.com/Satayesh-Esmaily/Goal-Tracker-">Goal Tracker</a> &nbsp;·&nbsp; <a href="https://github.com/HisabBook/hisab-book">HisabBook</a> &nbsp;·&nbsp; <a href="https://github.com/Satayesh-Esmaily/Taply">Taply</a> &nbsp;·&nbsp; <a href="https://github.com/Satayesh-Esmaily/Product-Store-App">Product Store</a></sub>
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-## Robotics & Game Development
+<img src="assets/sec-stats.svg" alt="GitHub Stats" width="100%"/>
+
+<br/>
+
+<div align="center">
+
+<img height="180" alt="GitHub stats with total commits" src="https://github-readme-stats.vercel.app/api?username=Satayesh-Esmaily&show_icons=true&include_all_commits=true&hide_border=false&bg_color=05060F&title_color=00E5FF&icon_color=FF3DCB&text_color=E6E9FF&border_color=1A1F3D&border_radius=16" />
+<img height="180" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Satayesh-Esmaily&layout=compact&langs_count=8&hide_border=false&bg_color=05060F&title_color=00E5FF&icon_color=FF3DCB&text_color=E6E9FF&border_color=1A1F3D&border_radius=16" />
+
+<br/>
+
+<img width="70%" alt="Contribution streak" src="https://streak-stats.demolab.com?user=Satayesh-Esmaily&background=05060F&border=1A1F3D&ring=00E5FF&fire=FF3DCB&currStreakNum=E6E9FF&currStreakLabel=00E5FF&sideNums=E6E9FF&sideLabels=FF3DCB&dates=8A93C2&stroke=1A1F3D&border_radius=16" />
+
+</div>
+
+<br/>
+
+<img src="assets/sec-activity.svg" alt="Commit Activity" width="100%"/>
+
+<br/>
+
+<div align="center">
+<img width="100%" alt="Contribution and commit activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Satayesh-Esmaily&bg_color=05060F&color=E6E9FF&line=00E5FF&point=FF3DCB&area=true&area_color=00E5FF&hide_border=true&custom_title=Commits%20%26%20Contributions" />
+</div>
+
+<br/>
+
+<img src="assets/sec-trophies.svg" alt="Trophies" width="100%"/>
+
+<br/>
+
+<div align="center">
+<img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=Satayesh-Esmaily&theme=radical&margin-w=8&row=1&column=7" />
+</div>
+
+<br/>
+
+<img src="assets/sec-snake.svg" alt="Contribution Snake" width="100%"/>
+
+<br/>
+
+<div align="center">
+<img width="100%" alt="Contribution snake" src="https://raw.githubusercontent.com/Satayesh-Esmaily/Satayesh-Esmaily/output/github-snake-dark.svg" />
+</div>
+
+<br/>
+
+<img src="assets/sec-robotics.svg" alt="Robotics and Game Development" width="100%"/>
+
+<br/>
 
 - **Game development** with Unity, Blender and Python (Pygame for 2D games)
 - **Robot programming** with Python-based control
 - **Control systems** using sensor-based logic
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-## Experience
+<img src="assets/sec-experience.svg" alt="Experience" width="100%"/>
+
+<br/>
 
 **QA Tester** — Code to Inspire · Remote · 7 months
 Manual testing, bug reporting and test-case execution, with a focus on software quality, user experience and unit-test coverage.
 
 **Vice President, Capacity Building Department** — Generation of Thinkers (GOT) · Volunteer · 2024 – 2025
 
-## Education & Training
+<br/>
+
+<img src="assets/sec-education.svg" alt="Education and Training" width="100%"/>
+
+<br/>
 
 - **Code to Inspire** — Web Design, React.js, Next.js · 2025 – 2026
 - **Pioneering mWoen Online School** — Robotics & Python Programming · 2024 – 2026
 - **Hewad High School** — Grades 9 – 12 · 2023 – 2026
 
-<details>
-<summary><b>Certifications</b> &nbsp;·&nbsp; Duolingo English Test 120 &nbsp;·&nbsp; Farsi (fluent), English (very good)</summary>
+**Languages:** Farsi (fluent) · English (very good) · Duolingo English Test 120
 
 <br/>
 
-| Certification | Issuer | Year |
-|:--|:--|:-:|
-| Web Design Fundamentals (Grade A+) | Code to Inspire | 2025 |
-| Representing Team Afghanistan, First Global Competition | Code to Inspire | 2025 |
-| Shadowing Program & Seda App Hackathon | Code to Inspire | 2025 |
-| Python Course | Cisco Networking Academy | 2025 |
-| Cyber Security Course | Cisco Networking Academy | 2024 |
-| PowerPoint Presentation Design & Formatting | Coursera | 2025 |
-| Adobe InDesign Flyer Design Workshop | Coursera | 2025 |
-| Children and the Digital Future Workshop | Femstech Worldwide | 2024 |
-| English Course | Kings College London | 2023 – 2024 |
-| Speech Course | AIL | 2023 |
-| First Aid & Injections | AIL | 2024 |
-
-</details>
-
-<img src="assets/divider.svg" width="100%" alt=""/>
-
-## GitHub Activity
-
 <div align="center">
-
-<img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Satayesh-Esmaily&show_icons=true&hide_border=false&border_color=1E293B&border_radius=18&bg_color=0A0F1E&title_color=A5B4FC&icon_color=2DD4BF&text_color=CBD5E1" />
-<img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Satayesh-Esmaily&layout=compact&hide_border=false&border_color=1E293B&border_radius=18&bg_color=0A0F1E&title_color=A5B4FC&text_color=CBD5E1" />
-
-<br/><br/>
-
 <img src="assets/footer.svg" width="100%" alt="Let's build something together"/>
-
 </div>
