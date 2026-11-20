@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#090E1C"/><stop offset="1" stop-color="#0E1631"/></linearGradient>
+<filter id="b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="50"/></filter>
+<clipPath id="c"><rect width="1200" height="170" rx="24"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="1200" height="170" fill="url(#bg)"/>
+<g filter="url(#b)"><circle cx="200" cy="170" r="110" fill="#4F46E5" fill-opacity="0.5"/><circle cx="1000" cy="0" r="110" fill="#14B8A6" fill-opacity="0.4"/></g>
+<text x="600" y="78" text-anchor="middle" font-family="Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#F8FAFC">Let's build something together</text>
+<text x="600" y="112" text-anchor="middle" font-family="Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8">Frontend · Python · Open source · EdTech</text></g>
+<rect x="0.5" y="0.5" width="1199" height="169" rx="23.5" stroke="#FFFFFF" stroke-opacity="0.10"/></svg>
