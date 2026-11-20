@@ -17,9 +17,16 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "generated")
 
 QUERY = """query($login:String!){user(login:$login){
  followers{totalCount}
- repositories(ownerAffiliations:OWNER,isFork:false,first:100,privacy:PUBLIC){totalCount nodes{stargazerCount}}
+ repositories(ownerAffiliations:OWNER,isFork:false,first:100,privacy:PUBLIC){totalCount nodes{stargazerCount languages(first:8,orderBy:{field:SIZE,direction:DESC}){edges{size node{name}}}}}
  contributionsCollection{totalCommitContributions totalIssueContributions totalPullRequestContributions totalPullRequestReviewContributions
   contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}}}"""
+
+def _langs(nodes):
+    tot = {}
+    for n in nodes:
+        for e in n["languages"]["edges"]:
+            tot[e["node"]["name"]] = tot.get(e["node"]["name"], 0) + e["size"]
+    return sorted(tot.items(), key=lambda kv: -kv[1])
 
 def fetch(login, token):
     req = urllib.request.Request("https://api.github.com/graphql",
@@ -35,10 +42,10 @@ def fetch(login, token):
         total=cal["totalContributions"], commits=cc["totalCommitContributions"], prs=cc["totalPullRequestContributions"],
         issues=cc["totalIssueContributions"], reviews=cc["totalPullRequestReviewContributions"],
         repos=u["repositories"]["totalCount"], stars=sum(n["stargazerCount"] for n in u["repositories"]["nodes"]),
-        followers=u["followers"]["totalCount"], live=True)
+        followers=u["followers"]["totalCount"], langs=_langs(u["repositories"]["nodes"]), live=True)
 
 def empty():
-    return dict(weeks=[], total=0, commits=0, prs=0, issues=0, reviews=0, repos=0, stars=0, followers=0, live=False)
+    return dict(weeks=[], total=0, commits=0, prs=0, issues=0, reviews=0, repos=0, stars=0, followers=0, langs=[], live=False)
 
 def activity_svg(d):
     W, H = 840, 320
@@ -161,10 +168,93 @@ def skyline_svg(d):
 {stat(262, "BEST DAY", best, CY)}{stat(372, "ACTIVE DAYS", active, GR)}{leg}</g>
 <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="17.5" stroke="{LINE}"/></svg>"""
 
+def _fmt(ds):
+    return f"{MONTHS[int(ds[5:7])-1]} {int(ds[8:10])}"
+
+def streaks(d):
+    days = [(dt, c) for w in d["weeks"] for dt, c in w]
+    cur, cs, ce = 0, None, None
+    i = len(days) - 1
+    if i >= 0 and days[i][1] == 0: i -= 1
+    if i >= 0 and days[i][1] > 0: ce = days[i][0]
+    while i >= 0 and days[i][1] > 0:
+        cur += 1; cs = days[i][0]; i -= 1
+    best, run, bs, be, rs = 0, 0, None, None, None
+    for dt, c in days:
+        if c > 0:
+            run += 1; rs = rs if run > 1 else dt
+            if run > best: best, bs, be = run, rs, dt
+        else: run = 0
+    rng = lambda a, b: f"{_fmt(a)} – {_fmt(b)}" if a and b else "—"
+    return cur, rng(cs, ce), best, rng(bs, be)
+
+def stats_svg(d):
+    import math
+    W, H, CW, GAP = 840, 270, 270, 15
+    cards = ""
+    def card(x, label, c, inner):
+        return (f'<g transform="translate({x} 0)"><rect x="0.5" y="0.5" width="{CW-1}" height="{H-1}" rx="18" fill="{BG2}" stroke="{LINE}"/>'
+                f'<circle cx="26" cy="28" r="3.5" fill="{c}" filter="url(#glow)"/>'
+                f'<text x="38" y="32" font-family="{MONO}" font-size="11" letter-spacing="2" fill="{c}">{label}</text>{inner}</g>')
+    # --- contributions
+    items = [("COMMITS", d["commits"], CY), ("PULL REQUESTS", d["prs"], MG), ("ISSUES", d["issues"], VI), ("CODE REVIEWS", d["reviews"], GR)]
+    mx = max([v for _, v, _ in items] + [1])
+    inner = (f'<text x="26" y="86" font-family="{SANS}" font-size="46" font-weight="800" fill="url(#n)" filter="url(#glow)">{d["total"]}</text>'
+             f'<text x="26" y="108" font-family="{MONO}" font-size="11" fill="{MUT}">contributions · last 12 months</text>')
+    for i, (lab, v, c) in enumerate(items):
+        y = 140 + i * 31
+        inner += (f'<text x="26" y="{y}" font-family="{MONO}" font-size="10" letter-spacing="1.5" fill="{MUT}">{lab}</text>'
+                  f'<text x="{CW-26}" y="{y}" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="700" fill="{TXT}">{v}</text>'
+                  f'<rect x="26" y="{y+7}" width="{CW-52}" height="5" rx="2.5" fill="{LINE}"/>'
+                  f'<rect x="26" y="{y+7}" width="{max((CW-52)*v/mx, 5 if v else 0):.1f}" height="5" rx="2.5" fill="{c}" filter="url(#glow)"/>')
+    cards += card(0, "CONTRIBUTIONS", CY, inner)
+    # --- streak
+    cur, crng, best, brng = streaks(d)
+    r = 48; C = 2 * math.pi * r
+    prog = min(cur / max(best, 1), 1) * C
+    inner = (f'<circle cx="135" cy="112" r="{r}" stroke="{LINE}" stroke-width="9"/>'
+             f'<circle cx="135" cy="112" r="{r}" stroke="{CY}" stroke-width="9" stroke-linecap="round" stroke-dasharray="{prog:.1f} {C:.1f}" transform="rotate(-90 135 112)" filter="url(#glow)"/>'
+             f'<path d="M135 56 C141 62 143 66 140 72 C138 76 132 76 130 72 C127 66 133 62 135 56Z" fill="{MG}" filter="url(#glow)"/>'
+             f'<text x="135" y="125" text-anchor="middle" font-family="{SANS}" font-size="40" font-weight="800" fill="{TXT}">{cur}</text>'
+             f'<text x="135" y="186" text-anchor="middle" font-family="{MONO}" font-size="11" letter-spacing="2" fill="{CY}">CURRENT STREAK</text>'
+             f'<text x="135" y="203" text-anchor="middle" font-family="{MONO}" font-size="10.5" fill="{MUT}">{crng}</text>'
+             f'<line x1="26" y1="216" x2="{CW-26}" y2="216" stroke="{LINE}"/>'
+             f'<text x="135" y="239" text-anchor="middle" font-family="{SANS}" font-size="13.5" font-weight="700" fill="{TXT}">Longest · {best} days</text>'
+             f'<text x="135" y="256" text-anchor="middle" font-family="{MONO}" font-size="10.5" fill="{MUT}">{brng}</text>')
+    cards += card(CW + GAP, "STREAK", MG, inner)
+    # --- languages
+    langs = d.get("langs") or []
+    total = sum(b for _, b in langs)
+    cols = [CY, MG, VI, GR, YE, OR]
+    top = [(n, b) for n, b in langs[:5]]
+    rest = total - sum(b for _, b in top)
+    if rest > 0: top.append(("Other", rest))
+    r = 52; C = 2 * math.pi * r
+    inner = f'<circle cx="80" cy="150" r="{r}" stroke="{LINE}" stroke-width="16"/>'
+    off, leg = 0.0, ""
+    for i, (n, b) in enumerate(top):
+        c = cols[i] if n != "Other" else MUT
+        seg = C * b / total
+        inner += (f'<circle cx="80" cy="150" r="{r}" stroke="{c}" stroke-width="16" stroke-dasharray="{max(seg-2, 0.5):.1f} {C:.1f}" stroke-dashoffset="{-off:.1f}" transform="rotate(-90 80 150)" filter="url(#glow)"/>')
+        off += seg
+        y = 100 + i * 28
+        leg += (f'<circle cx="162" cy="{y-4}" r="4" fill="{c}"/>'
+                f'<text x="174" y="{y}" font-family="{SANS}" font-size="12.5" fill="{TXT}">{html.escape(n[:11])}</text>'
+                f'<text x="{CW-22}" y="{y}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUT}">{100*b/total:.1f}%</text>')
+    if total:
+        inner += (f'<text x="80" y="156" text-anchor="middle" font-family="{SANS}" font-size="18" font-weight="800" fill="{TXT}">{100*top[0][1]/total:.0f}%</text>'
+                  f'<text x="80" y="172" text-anchor="middle" font-family="{MONO}" font-size="9.5" fill="{MUT}">{html.escape(top[0][0][:10])}</text>' + leg)
+    else:
+        inner += f'<text x="80" y="154" text-anchor="middle" font-family="{MONO}" font-size="10" fill="{MUT}">no data yet</text>'
+    cards += card(2 * (CW + GAP), "TOP LANGUAGES", VI, inner)
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">
+<defs>{GLOW}<linearGradient id="n" x1="26" x2="200" gradientUnits="userSpaceOnUse"><stop stop-color="{CY}"/><stop offset="1" stop-color="{MG}"/></linearGradient></defs>{cards}</svg>"""
+
 def write(d):
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "activity.svg"), "w", encoding="utf-8").write(activity_svg(d))
     open(os.path.join(OUT, "trophies.svg"), "w", encoding="utf-8").write(trophies_svg(d))
+    open(os.path.join(OUT, "stats.svg"), "w", encoding="utf-8").write(stats_svg(d))
     open(os.path.join(OUT, "skyline.svg"), "w", encoding="utf-8").write(skyline_svg(d))
 
 if __name__ == "__main__":
