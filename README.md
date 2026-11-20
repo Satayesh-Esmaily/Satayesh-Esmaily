@@ -91,12 +91,12 @@ I'm a Computer Science student who builds for the web with **React, Next.js, Ang
 
 <br/>
 
-<img src="assets/sec-snake.svg" alt="Contribution Snake" width="100%"/>
+<img src="assets/sec-skyline.svg" alt="Contribution Skyline" width="100%"/>
 
 <br/>
 
 <div align="center">
-<img width="100%" alt="Contribution snake" src="https://raw.githubusercontent.com/Satayesh-Esmaily/Satayesh-Esmaily/output/github-snake-dark.svg" />
+<img width="100%" alt="Contribution skyline: every day of the last year as a neon 3D building" src="assets/generated/skyline.svg" />
 </div>
 
 <br/>
