@@ -5,12 +5,16 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
-    paths:
-      - ".github/scripts/**"
-      - ".github/workflows/stats.yml"
+    branches: [main, master]
+    paths-ignore:
+      - "assets/generated/**"
 
 permissions:
   contents: write
+
+concurrency:
+  group: neon-stats
+  cancel-in-progress: true
 
 jobs:
   update:
@@ -23,9 +27,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate commit activity, trophies and skyline
+      - name: Generate commit activity, trophies, stats and skyline
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: add a repository secret named STATS_TOKEN (a personal access token)
+          # to include private contributions. Falls back to the built-in token.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
         run: python .github/scripts/neon_stats.py
 
