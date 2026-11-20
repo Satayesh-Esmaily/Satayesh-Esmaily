@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="48" viewBox="0 0 840 48" fill="none">
+<defs><filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="bar" x1="0" y1="0" x2="0" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5FF"/><stop offset="1" stop-color="#FF3DCB"/></linearGradient>
+<linearGradient id="ln" x1="199" x2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD60A" stop-opacity="0.7"/><stop offset="1" stop-color="#FFD60A" stop-opacity="0"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="839" height="47" rx="14" fill="#0A0C1C" stroke="#1A1F3D"/>
+<rect x="14" y="12" width="4" height="24" rx="2" fill="url(#bar)" filter="url(#glow)"/>
+<text x="32" y="29.5" font-family="'JetBrains Mono','SF Mono',SFMono-Regular,Consolas,'Liberation Mono',monospace" font-size="13" letter-spacing="1" fill="#FFD60A" filter="url(#glow)">06 //</text>
+<text x="84" y="31" font-family="Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#E6E9FF">Trophies</text>
+<rect x="199" y="23.5" width="581" height="1.5" fill="url(#ln)"/>
+<circle cx="804" cy="24" r="3" fill="#FFD60A" fill-opacity="0.9" filter="url(#glow)"/><circle cx="816" cy="24" r="3" fill="#FFD60A" fill-opacity="0.5"/><circle cx="828" cy="24" r="3" fill="#FFD60A" fill-opacity="0.25"/>
+</svg>
